@@ -1,3 +1,7 @@
+:root {
+  --main-color: #0099ff;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +9,64 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--main-color);
+}
+
+form {
+  width: 280px;
+  display: grid;
+  grid-template-columns: 280px;
+  justify-items: center;
+}
+
+#password-reset-header {
+  width: 250px;
+  color: var(--main-color);
+  text-align: center;
+}
+
+#password-reset-main {
+  margin: 64px auto 0 auto;
+  padding: 64px 16px;
+  border-radius: 16px;
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  justify-items: center;
+  background-color: white;
+  -webkit-box-shadow: 10px 10px 32px -24px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 32px -24px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 32px -24px rgba(0,0,0,0.75);
+}
+
+#password-button {
+  border-radius: 16px;
+  border: none;
+  height: 64px;
+  padding: 16px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: var(--main-color);
+  color: white;
+  cursor: pointer;
+}
+
+#password-reset-textfield {
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 0 0 8px;
+  background-color: #eee;
+  width: 200px;
+  display: block;
+  justify-items: center;
+}
+
+#issue-text {
+  background-color: light;
+  text-align: center;
 }
 
 code {
