@@ -1,7 +1,7 @@
 {
   "name": "ems-admin-page",
   "version": "0.1.0",
-  "homepage": "https://admin.responsetimetrack.app",
+  "homepage": "https://responsetimetrack.com",
   "private": true,
   "dependencies": {
     "@firebase/auth": "^1.7.9",
