@@ -1,5 +1,5 @@
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-import ForgotPassword from './pages/ForgotPassword';
+import FirebaseAuthPage from './pages/FirebaseAuth';
 import Main from './pages/Main';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Main />} exact />
-        <Route path="/forgotPassword" element={<ForgotPassword />} />
+        <Route path="/auth" element={<FirebaseAuthPage />} exact/>
       </Routes>
     </Router>
   );

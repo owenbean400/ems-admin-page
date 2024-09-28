@@ -12,20 +12,25 @@ body {
   background-color: var(--main-color);
 }
 
-form {
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.auth-form {
   width: 280px;
   display: grid;
   grid-template-columns: 280px;
   justify-items: center;
 }
 
-#password-reset-header {
+.auth-header {
   width: 250px;
   color: var(--main-color);
   text-align: center;
+  align-self: center;
 }
 
-#password-reset-main {
+.auth-main {
   margin: 64px auto 0 auto;
   padding: 64px 16px;
   border-radius: 16px;
@@ -40,7 +45,7 @@ form {
   box-shadow: 10px 10px 32px -24px rgba(0,0,0,0.75);
 }
 
-#password-button {
+.auth-button {
   border-radius: 16px;
   border: none;
   height: 64px;
@@ -56,17 +61,31 @@ form {
 #password-reset-textfield {
   height: 48px;
   border: none;
-  border-radius: 8px;
-  padding: 8px 0 0 8px;
+  border-radius: 8px 0 0 8px;
+  padding: 8px 4px 0 8px;
   background-color: #eee;
-  width: 200px;
+  width: 148px;
   display: block;
   justify-items: center;
 }
 
-#issue-text {
+.auth-issue-text {
   background-color: light;
   text-align: center;
+}
+
+.password-reset-text-container {
+  display: grid;
+  grid-template-columns: 160px 40px;
+}
+
+.password-toggle-text-form {
+  background-color: #eee;
+  border-radius: 0px 8px 8px 0px;
+  height: 24px;
+  margin: 0;
+  padding: 16px 8px;
+  align-self: center;
 }
 
 code {
